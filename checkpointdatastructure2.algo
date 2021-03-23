@@ -1,0 +1,23 @@
+ALGORITHM datastructure1
+VAR
+tab1: ARRAY_OF INTEGER[length];
+tab2: ARRAY_OF INTEGER[length];
+HASH_TABLE<integer,integer>
+    i:=INTEGER
+count=0
+BEGIN
+  FOR i FROM 0 TO tab1.length  DO
+  Read(tab1 [i])
+  htab.insert(tab1[i],1)
+  FOR i FROM 0 TO tab2.length DO
+  Read(tab2 [i])
+  if(htab.lookup(tab1[i])=true) then
+  htab.insert(tab2[i],2)
+  count:= count +htab.get(1)
+END_FOR
+END_FOR
+  write (" Common elements are "htab.get(2));
+ write ("Sum of overlapping elements", count);
+  
+
+END
